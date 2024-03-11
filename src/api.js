@@ -70,3 +70,5 @@
 //         console.error('Error: ', jqXHR.responseText);
 //     }
 // });
+export const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5";
+export const WEATHER_API_KEY = "e4263c035d6351aafc6d7be695254363";
