@@ -4,7 +4,7 @@ import {
   AccordionItemButton,
   AccordionItemHeading,
   AccordionItemPanel,
-} from "react-accessible-accordion";
+} from "react-accessible-accordion"; // well yeah instead of using a css framework we are importing the react accessible accordion component.
 import "./forecast.css";
 
 const weekDays = [
@@ -21,7 +21,7 @@ const Forecast = ({ data }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = weekDays
     .slice(dayInAWeek, weekDays.length)
-    .concat(weekDays.slice(0, dayInAWeek));
+    .concat(weekDays.slice(0, dayInAWeek)); // this is a little treacly, first we find out what day is it today(number), then use that number to slice the days before that day in  a week, but we want a full week forecast so we show the sliced days after the rest of this week, you know... 
 
   return (
     <>

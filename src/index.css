@@ -1,5 +1,6 @@
 body {
-  margin: "Roboto", Arial !important;
+  /* margin: "Roboto", Arial !important; */
+  font-family: "Lato", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -7,4 +8,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body,html{
+  height: 100vh;
+  min-width: 300px;
 }

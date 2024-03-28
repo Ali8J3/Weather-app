@@ -1,61 +1,102 @@
 .weather{
-    width: 300px;
+    /* width: 300px; */
     border-radius: 6px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 30%);
     color: #fff;
     background-color: #333;
-    margin: 20px auto 0 auto;
+    /* margin: 20px auto 0 auto; */
     padding: 0 20px 20px 20px;
+    /* _____________________ */
+    width: 85%;
+    height: 600px;  /* $fix this$ */
+    margin: 5px auto;
 }
 
-.top, .bottom 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 /* TOP */
+.top{
+    display: flex;
+    flex-direction: column;
+    font-size: xxx-large;
+    align-items: center;
+    justify-content: flex-start;
+}
+.temperature{
+    margin: 0;
+    padding: 40px 0 0 0;
+    font-size: 7rem;
+    font-weight: 400;
+    /* font-weight: 600;
+    font-size: 70px;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 10px 0; */
+}
+.weather-description{
+    
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize; /* font: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0; */
+}
+
+/* Bottom = Details */
+.details 
+{
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+
 .city{
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 16px;
     line-height: 1;
     margin: 0;
-    letter-spacing: 1px;
-}
-.weather-description{
-    font: 400;
-    font-size: 14px;
-    line-height: 1;
-    margin: 0;
+    letter-spacing: 1px; */
 }
 .weather-icon{
-    width: 100px;
+    /* width: 100px; */
 
 }
 
 /* BOTTOM */
-.temperature{
-    font-weight: 600;
-    font-size: 70px;
-    width: auto;
-    letter-spacing: -5px;
-    margin: 10px 0;
-}
 .details{
-    width: 100%;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%;
+    padding-left: 20px; */
 }
 .parameter-row{
+    border-radius: 20px;
+    width: 220px;
+    height: 100px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    padding: 20px 0 0 20px;
+    gap: 10px;
+    flex-direction: column;
+    /* display: flex;
+    justify-content: space-between; */
 }
 .parameter-label{
-    text-align: left;
+    text-transform: uppercase;
+    color: rgba(95, 158, 160, 06);
+    /* text-align: left;
     font: 400;
-    font-size: 12px;
+    font-size: 12px; */
 }
 .parameter-value{
-    text-align: left;
+    font-size: 1.5rem;
+    /* text-align: left;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 12px; */
 }
