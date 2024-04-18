@@ -1,54 +1,72 @@
-.title {
-  font-size: 23px;
-  font-weight: 700;
+.forecast{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 700px;
+    margin-left: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
 }
-.daily-item {
-  background-color: #f5f5f5;
-  border-radius: 40%;
-  height: 40px;
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 40px;
-  pad: 5px 20px;
+
+/* Hourly & Daily */
+.forecast-container{
+    background-color: #1272d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 9px;
+    width: 95%;
+    height: auto;
 }
-.icon-small {
-  width: 40px;
+.forecast-title{
+    color: rgb(42 62 62 / 88%);
+    font-size: x-large;
+    font-weight: 500;
+    padding-left: 20px;
 }
-.day {
-  color: #212121;
-  flex: 1 1;
-  font-weight: 600;
-  margin-left: 15px;
+.forecast-heading{
+    display: flex;
+    align-items: center;
 }
-.description {
-  float: 1 1;
-  margin-right: 15px;
-  text-align: right;
+.forecast-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+    padding: 0 5px;
 }
-.min-max {
-  color: #757575;
+.forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.daily-details-grid {
-  grid-row-gap: 0;
-  grid-column-gap: 15px;
-  row-gap: 0;
-  column-gap: 15px;
-  display: grid;
-  flex: 1 1;
-  grid-template-columns: auto auto;
-  padding: 5px 15px;
+.forecast-temperature{
+    font-weight: 600;
+    font-size: 1.2rem;
 }
-.daily-details-grid-item {
-  align-items: center;
-  display: flex;
-  height: 30px;
-  justify-content: space-between;
+
+/* Others */
+.hourlyForecastSVG{
+    stroke-width: 0.08rem;
 }
-.daily-details-grid label:first-child {
-  color: #757575;
+hr{
+    width: 95%;
 }
-.daily-details-grid label:last-child {
-  color: #212121;
+/* Med & Small Screens:  */
+@media(max-width:1050){
+    .forecast-container{
+        flex-wrap: wrap;
+        align-content: space-around;
+        overflow: scroll;
+    }
+}
+@media (max-width:760px) {
+    .forecast{
+        width: 90%;
+        margin-left: 15px;
+    }
 }

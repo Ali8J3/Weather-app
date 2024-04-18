@@ -13,12 +13,33 @@
 }
 .forecast-right{
     width: 60%;
+    
 }
+
+div{
+    color: white;
+}
+
+svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+    padding-right: 2px;
+}
+svg path {
+    stroke: #262525; /* Set the stroke color */
+    stroke-width: .08rem; /* Adjust the stroke width */
+  }
+
 @media (max-width: 768px) {
     .container{
         flex-direction: column;
     }
     .search-and-current{
         width: 100%;
+    }
+    .forecast-right{
+        width: 100%;
+        margin: 0 15px;
     }
 }

@@ -1,7 +1,11 @@
-.search{
-    width: 90%;
-    margin: 5px auto;
-    background-color: black;
-    color: black;
-    border-radius: 16px;
+.search {
+  width: 90%;
+  margin: 5px auto;
+  background-color: black;
+  color: black;
+  border-radius: 16px;
+}
+.AsyncPaginate {
+  color: black;
+  background-color: black;
 }

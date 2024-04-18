@@ -20,6 +20,7 @@
     font-size: xxx-large;
     align-items: center;
     justify-content: flex-start;
+    padding-bottom: 15%;
 }
 .temperature{
     margin: 0;
@@ -41,28 +42,6 @@
     font-size: 14px;
     line-height: 1;
     margin: 0; */
-}
-
-/* Bottom = Details */
-.details 
-{
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
-
-
-.city{
-    /* font-weight: 600;
-    font-size: 16px;
-    line-height: 1;
-    margin: 0;
-    letter-spacing: 1px; */
-}
-.weather-icon{
-    /* width: 100px; */
-
 }
 
 /* BOTTOM */
@@ -90,9 +69,10 @@
 .parameter-label{
     text-transform: uppercase;
     color: rgba(95, 158, 160, 06);
-    /* text-align: left;
-    font: 400;
-    font-size: 12px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .parameter-value{
     font-size: 1.5rem;
